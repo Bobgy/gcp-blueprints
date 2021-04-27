@@ -10,7 +10,8 @@ openAPI:
       x-k8s-cli:
         setter:
           name: asm-label
-          value: ASM-LABEL
+          value: asm-192-1
+          isSet: true
     io.k8s.cli.setters.name:
       x-k8s-cli:
         setter:

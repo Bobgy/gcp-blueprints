@@ -5,10 +5,10 @@ metadata:
 upstream:
   type: git
   git:
-    commit: c4cd4a547731c2b3a322da43183ed130baebc33f
+    commit: d02025137bff0b886345bbfed99bfb3c5f7201ab
     repo: https://github.com/GoogleCloudPlatform/anthos-service-mesh-packages
     directory: /asm
-    ref: 1.9.1-asm.1+config3
+    ref: 1.9.2-asm.1+config4
 openAPI:
   definitions:
     io.k8s.cli.setters.anthos.servicemesh.canonicalServiceHub:
@@ -195,8 +195,7 @@ openAPI:
       x-k8s-cli:
         setter:
           name: gcloud.project.projectNumber
-          value: "275900757502"
-          isSet: true
+          value: PROJECT_NUMBER
     io.k8s.cli.substitutions.cluster-name:
       type: string
       x-k8s-cli:
