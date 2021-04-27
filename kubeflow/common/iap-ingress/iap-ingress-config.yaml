@@ -1,9 +1,9 @@
 apiVersion: v1
 data:
-  appName: KUBEFLOW-NAME # {"$kpt-set":"name-label"}
-  hostname: KUBEFLOW-NAME.endpoints.PROJECT.cloud.goog # {"$kpt-set":"hostname"}
-  ipName: KUBEFLOW-NAME-ip # {"$kpt-set":"ip-name"}
-  project: "PROJECT" # {"$kpt-set":"project"}
+  appName: dev-4-27 # {"$kpt-set":"name-label"}
+  hostname: dev-4-27.endpoints.gongyuan-pipeline-test.cloud.goog # {"$kpt-set":"hostname"}
+  ipName: dev-4-27-ip # {"$kpt-set":"ip-name"}
+  project: "gongyuan-pipeline-test" # {"$kpt-set":"project"}
 kind: ConfigMap
 metadata:
   creationTimestamp: null
