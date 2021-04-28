@@ -79,7 +79,7 @@ apps/katib \
 
 
 .PHONY: apply-v3
-apply-v3: validate-values check-name 
+apply-v3: validate-values check-name
 	@for component in $(components) ; do \
 	BUILD_DIR=$(BUILD_DIR) NAME=$(NAME) KFCTXT=$(KFCTXT) LOCATION=$(LOCATION) PROJECT=$(PROJECT) ./hack/apply_component.sh -path $$component; \
 	done
@@ -87,7 +87,7 @@ apply-v3: validate-values check-name
 	KFCTXT=$(KFCTXT) $(MAKE) -C common/iap-ingress pod-reset
 
 .PHONY: apply-kubeflow
-apply-kubeflow: validate-values check-name 
+apply-kubeflow: validate-values check-name
 	# GCP Resources
 	$(MAKE) apply-cnrm
 
@@ -99,7 +99,7 @@ apply-kubeflow: validate-values check-name
 
 	# Install ASM and custom_overlay
 	$(MAKE) -C common/asm install-asm
-	
+
 	# IAP secret should not be exported as resource file, so applying directly.
 	$(MAKE) iap-secret
 
@@ -187,7 +187,7 @@ apply-kubeflow: validate-values check-name
 	kustomize build --load-restrictor LoadRestrictionsNone -o $(BUILD_DIR)/pipeline ./apps/pipeline
 	kubectl --context=$(KFCTXT) apply -f ./$(BUILD_DIR)/pipeline
 
-	$(MAKE) apply-knative 
+	$(MAKE) apply-knative
 
 	$(MAKE) apply-kfserving
 
@@ -250,7 +250,7 @@ apply-kubeflow-issuer:
 
 
 .PHONY: apply-istio
-apply-istio: 
+apply-istio:
 	# Kubeflow kubeflow-istio
 	rm -rf $(BUILD_DIR)/kubeflow-istio && mkdir -p $(BUILD_DIR)/kubeflow-istio
 	kustomize build --load-restrictor LoadRestrictionsNone -o $(BUILD_DIR)/kubeflow-istio ./common/istio
@@ -278,7 +278,7 @@ iap-secret: check-iap
 .PHONY: check-iap
 check-iap:
 	./hack/check_oauth_secret.sh
-	
+
 # Delete gcp resources
 .PHONY: delete-gcp
 delete-gcp:
