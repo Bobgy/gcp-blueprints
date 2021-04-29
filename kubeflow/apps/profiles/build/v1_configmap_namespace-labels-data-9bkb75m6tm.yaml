@@ -1,0 +1,12 @@
+apiVersion: v1
+data:
+  namespace-labels.yaml: |
+    # Below is a list of labels to be enforced.
+    istio-injection: ''
+    istio.io/rev: asm-192-1 # {"$kpt-set":"asm-label"}
+kind: ConfigMap
+metadata:
+  labels:
+    kustomize.component: profiles
+  name: namespace-labels-data-9bkb75m6tm
+  namespace: kubeflow
