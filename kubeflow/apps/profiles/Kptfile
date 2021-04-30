@@ -22,12 +22,14 @@ openAPI:
       x-k8s-cli:
         setter:
           name: gcloud.core.project
-          value: PROJECT
+          value: gongyuan-dev
+          isSet: true
     io.k8s.cli.setters.email:
       x-k8s-cli:
         setter:
           name: email
-          value: EMAIL
+          value: gongyuan@google.com
+          isSet: true
     io.k8s.cli.substitutions.admin-sa-ref:
       x-k8s-cli:
         substitution:
