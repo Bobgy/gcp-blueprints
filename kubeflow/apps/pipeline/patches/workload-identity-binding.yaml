@@ -11,10 +11,3 @@ metadata:
   name: ml-pipeline-visualizationserver
   annotations:
     iam.gke.io/gcp-service-account: dev-4-28-user@gongyuan-dev.iam.gserviceaccount.com # {"$kpt-set":"user-sa-ref"}
----
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: pipeline-runner
-  annotations:
-    iam.gke.io/gcp-service-account: dev-4-28-user@gongyuan-dev.iam.gserviceaccount.com # {"$kpt-set":"user-sa-ref"}
