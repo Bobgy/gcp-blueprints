@@ -41,10 +41,10 @@ spec:
           valueFrom:
             configMapKeyRef:
               key: gcp-sa
-              name: profiles-config-74kc2kt468
+              name: profiles-config-hft9g82249
         envFrom:
         - configMapRef:
-            name: profiles-config-74kc2kt468
+            name: profiles-config-hft9g82249
         image: gcr.io/jamxl-kfp-dev/profile-controller:kf-v1.3-rc0
         imagePullPolicy: Always
         livenessProbe:
@@ -75,7 +75,7 @@ spec:
           valueFrom:
             configMapKeyRef:
               key: admin
-              name: profiles-config-74kc2kt468
+              name: profiles-config-hft9g82249
         - name: USERID_HEADER
           valueFrom:
             configMapKeyRef:
@@ -90,10 +90,10 @@ spec:
           valueFrom:
             configMapKeyRef:
               key: gcp-sa
-              name: profiles-config-74kc2kt468
+              name: profiles-config-hft9g82249
         envFrom:
         - configMapRef:
-            name: profiles-config-74kc2kt468
+            name: profiles-config-hft9g82249
         image: public.ecr.aws/j1r0q0g6/notebooks/access-management:v1.3.0-rc.0
         imagePullPolicy: Always
         livenessProbe:

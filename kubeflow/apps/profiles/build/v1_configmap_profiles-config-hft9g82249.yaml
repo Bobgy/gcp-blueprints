@@ -1,0 +1,10 @@
+apiVersion: v1
+data:
+  admin: gongyuan@google.com
+  gcp-sa: dev-4-28-user@gongyuan-dev.iam.gserviceaccount.com
+kind: ConfigMap
+metadata:
+  labels:
+    kustomize.component: profiles
+  name: profiles-config-hft9g82249
+  namespace: kubeflow

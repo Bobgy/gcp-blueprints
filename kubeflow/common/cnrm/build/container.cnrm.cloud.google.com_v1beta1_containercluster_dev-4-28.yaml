@@ -30,6 +30,7 @@ spec:
   initialNodeCount: 2
   location: asia-east1-c
   loggingService: logging.googleapis.com/kubernetes
+  minMasterVersion: "1.18"
   monitoringService: monitoring.googleapis.com/kubernetes
   nodeConfig:
     machineType: e2-standard-8
@@ -43,6 +44,7 @@ spec:
       name: dev-4-28-vm
     workloadMetadataConfig:
       nodeMetadata: GKE_METADATA_SERVER
+  nodeVersion: "1.18"
   releaseChannel:
     channel: STABLE
   workloadIdentityConfig:

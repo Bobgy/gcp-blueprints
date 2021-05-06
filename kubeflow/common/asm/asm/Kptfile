@@ -195,8 +195,7 @@ openAPI:
       x-k8s-cli:
         setter:
           name: gcloud.project.projectNumber
-          value: "117584514845"
-          isSet: true
+          value: PROJECT_NUMBER
     io.k8s.cli.substitutions.cluster-name:
       type: string
       x-k8s-cli:
