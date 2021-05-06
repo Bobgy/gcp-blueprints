@@ -56,7 +56,6 @@ spec:
         - cluster.local/ns/kubeflow/sa/ml-pipeline-scheduledworkflow
         - cluster.local/ns/kubeflow/sa/ml-pipeline-viewer-crd-service-account
         - cluster.local/ns/kubeflow/sa/kubeflow-pipelines-cache
-
 ---
 apiVersion: security.istio.io/v1beta1
 kind: AuthorizationPolicy
@@ -69,7 +68,6 @@ spec:
       app: cache-server
   rules:
   - {}
-
 ---
 apiVersion: "networking.istio.io/v1alpha3"
 kind: DestinationRule
