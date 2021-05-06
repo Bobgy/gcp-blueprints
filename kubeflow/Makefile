@@ -1,3 +1,16 @@
+# Copyright 2021 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 
 # The name of the context for the management cluster
 # These are read using yq from the Kptfile.
@@ -84,13 +97,13 @@ clean-build:
 	done
 
 .PHONY: hydrate-all
-hydrate-all: validate-values check-name 
+hydrate-all: validate-values check-name
 	@for component in $(components) ; do \
 	(BUILD_DIR=$(BUILD_DIR) NAME=$(NAME) KFCTXT=$(KFCTXT) LOCATION=$(LOCATION) PROJECT=$(PROJECT) ./hack/apply_component.sh -path $$component -hydrate_only) || exit 1; \
 	done
 
 .PHONY: apply-all
-apply-all: validate-values check-name 
+apply-all: validate-values check-name
 	@for component in $(components) ; do \
 	(BUILD_DIR=$(BUILD_DIR) NAME=$(NAME) KFCTXT=$(KFCTXT) LOCATION=$(LOCATION) PROJECT=$(PROJECT) ./hack/apply_component.sh -path $$component) || exit 1; \
 	done
