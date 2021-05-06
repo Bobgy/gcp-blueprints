@@ -12,3 +12,4 @@ metadata:
 spec:
   location: asia-east1
   resourceID: gongyuan-dev-kfp-artifacts
+  uniformBucketLevelAccess: true
