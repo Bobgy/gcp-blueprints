@@ -5,10 +5,10 @@ metadata:
     app: kubeflow-pipelines
     component: gcs
     kf-name: dev-4-28
-  name: kfp-gcs-client
+  name: dev-4-28-kfp-gcs-acl
   namespace: gongyuan-dev
 spec:
   bucketRef:
-    name: kubeflow-pipelines-artifacts
+    name: dev-4-28-kfp-artifacts
   entity: user-dev-4-28-user@gongyuan-dev.iam.gserviceaccount.com
   role: OWNER

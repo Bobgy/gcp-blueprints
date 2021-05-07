@@ -5,7 +5,7 @@ metadata:
     app: kubeflow-pipelines
     component: gcs
     kf-name: dev-4-28
-  name: kfp-gcs-gateway-wi-user
+  name: dev-4-28-kfp-gcs-wi-user
   namespace: gongyuan-dev
 spec:
   member: serviceAccount:gongyuan-dev.svc.id.goog[kubeflow/kubeflow-pipelines-minio-gcs-gateway]

@@ -5,11 +5,11 @@ metadata:
     app: kubeflow-pipelines
     component: db
     kf-name: dev-4-28
-  name: kubeflow-pipelines-root
+  name: dev-4-28-kfp-root
   namespace: gongyuan-dev
 spec:
   instanceRef:
-    name: kubeflow-pipelines-mysql
+    name: dev-4-28-kfp-4
   password:
     value: ""
   resourceID: root

@@ -5,12 +5,11 @@ metadata:
     app: kubeflow-pipelines
     component: db
     kf-name: dev-4-28
-  name: kubeflow-pipelines-mysql
+  name: dev-4-28-kfp-4
   namespace: gongyuan-dev
 spec:
   databaseVersion: MYSQL_5_7
   region: asia-east1
-  resourceID: dev-4-28-kfp
   settings:
     availabilityType: ZONAL
     locationPreference:

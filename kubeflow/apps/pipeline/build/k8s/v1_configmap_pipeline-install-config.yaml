@@ -3,13 +3,13 @@ data:
   appName: pipeline
   appVersion: 1.5.0
   autoUpdatePipelineDefaultVersion: "true"
-  bucketName: gongyuan-dev-kfp-artifacts
+  bucketName: dev-4-28-kfp-artifacts
   cacheDb: cachedb
   cacheImage: gcr.io/google-containers/busybox
   cronScheduleTimezone: UTC
   dbHost: mysql
   dbPort: "3306"
-  gcsCloudSqlInstanceName: gongyuan-dev:asia-east1:dev-4-28-kfp
+  gcsCloudSqlInstanceName: gongyuan-dev:asia-east1:dev-4-28-kfp-4
   gcsProjectId: gongyuan-dev
   mlmdDb: metadb
   pipelineDb: mlpipeline

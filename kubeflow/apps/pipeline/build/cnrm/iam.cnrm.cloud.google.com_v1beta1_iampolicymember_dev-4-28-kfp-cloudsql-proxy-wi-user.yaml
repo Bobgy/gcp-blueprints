@@ -5,7 +5,7 @@ metadata:
     app: kubeflow-pipelines
     component: db
     kf-name: dev-4-28
-  name: kubeflow-pipelines-cloudsql-proxy-wi-user
+  name: dev-4-28-kfp-cloudsql-proxy-wi-user
   namespace: gongyuan-dev
 spec:
   member: serviceAccount:gongyuan-dev.svc.id.goog[kubeflow/kubeflow-pipelines-cloudsql-proxy]
