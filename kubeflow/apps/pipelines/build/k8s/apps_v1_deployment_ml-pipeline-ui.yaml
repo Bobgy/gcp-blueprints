@@ -24,6 +24,16 @@ spec:
     spec:
       containers:
       - env:
+        - name: KUBEFLOW_USERID_HEADER
+          valueFrom:
+            configMapKeyRef:
+              key: userid-header
+              name: kubeflow-config
+        - name: KUBEFLOW_USERID_PREFIX
+          valueFrom:
+            configMapKeyRef:
+              key: userid-prefix
+              name: kubeflow-config
         - name: VIEWER_TENSORBOARD_POD_TEMPLATE_SPEC_PATH
           value: /etc/config/viewer-pod-template.json
         - name: DEPLOYMENT
@@ -36,10 +46,6 @@ spec:
           value: "true"
         - name: ENABLE_AUTHZ
           value: "true"
-        - name: KUBEFLOW_USERID_HEADER
-          value: kubeflow-userid
-        - name: KUBEFLOW_USERID_PREFIX
-          value: ""
         - name: MINIO_NAMESPACE
           valueFrom:
             fieldRef:
