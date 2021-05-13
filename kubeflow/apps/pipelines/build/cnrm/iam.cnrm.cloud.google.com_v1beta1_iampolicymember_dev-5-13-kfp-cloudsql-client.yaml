@@ -1,0 +1,17 @@
+apiVersion: iam.cnrm.cloud.google.com/v1beta1
+kind: IAMPolicyMember
+metadata:
+  labels:
+    app: kubeflow-pipelines
+    kf-name: dev-5-13
+  name: dev-5-13-kfp-cloudsql-client
+  namespace: gongyuan-dev
+spec:
+  memberFrom:
+    serviceAccountRef:
+      name: dev-5-13-kfp-cloudsql
+  resourceRef:
+    apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
+    external: projects/gongyuan-dev
+    kind: Project
+  role: roles/cloudsql.client

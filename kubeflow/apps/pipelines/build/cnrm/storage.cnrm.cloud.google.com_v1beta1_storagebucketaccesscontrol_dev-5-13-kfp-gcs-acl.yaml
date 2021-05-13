@@ -1,0 +1,13 @@
+apiVersion: storage.cnrm.cloud.google.com/v1beta1
+kind: StorageBucketAccessControl
+metadata:
+  labels:
+    app: kubeflow-pipelines
+    kf-name: dev-5-13
+  name: dev-5-13-kfp-gcs-acl
+  namespace: gongyuan-dev
+spec:
+  bucketRef:
+    name: gongyuan-dev-kfp-2
+  entity: user-dev-5-13-user@gongyuan-dev.iam.gserviceaccount.com
+  role: OWNER

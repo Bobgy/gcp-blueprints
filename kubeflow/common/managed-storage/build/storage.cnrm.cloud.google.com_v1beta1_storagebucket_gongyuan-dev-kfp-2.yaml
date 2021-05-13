@@ -1,0 +1,12 @@
+apiVersion: storage.cnrm.cloud.google.com/v1beta1
+kind: StorageBucket
+metadata:
+  annotations:
+    cnrm.cloud.google.com/force-destroy: "true"
+  labels:
+    app: managed-storage
+    kf-name: dev-5-13
+  name: gongyuan-dev-kfp-2
+  namespace: gongyuan-dev
+spec:
+  location: asia-east1

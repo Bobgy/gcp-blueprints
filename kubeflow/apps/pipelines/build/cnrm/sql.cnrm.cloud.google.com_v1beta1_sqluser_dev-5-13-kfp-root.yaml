@@ -1,0 +1,14 @@
+apiVersion: sql.cnrm.cloud.google.com/v1beta1
+kind: SQLUser
+metadata:
+  labels:
+    app: kubeflow-pipelines
+    kf-name: dev-5-13
+  name: dev-5-13-kfp-root
+  namespace: gongyuan-dev
+spec:
+  instanceRef:
+    name: dev-5-13-kfp
+  password:
+    value: ""
+  resourceID: root
