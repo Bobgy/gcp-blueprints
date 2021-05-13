@@ -10,41 +10,41 @@ openAPI:
       x-k8s-cli:
         setter:
           name: name
-          value: KUBEFLOW-NAME
+          value: dev-5-13
           isSet: true
     io.k8s.cli.setters.gcloud.core.project:
       x-k8s-cli:
         setter:
           name: gcloud.core.project
-          value: PROJECT
+          value: gongyuan-dev
           isSet: true
     io.k8s.cli.setters.gcloud.compute.region:
       x-k8s-cli:
         setter:
           name: gcloud.compute.region
-          value: REGION
+          value: asia-east1
           isSet: true
     io.k8s.cli.setters.gcloud.compute.zone:
       x-k8s-cli:
         setter:
           name: gcloud.compute.zone
-          value: ZONE
+          value: asia-east1-c
           isSet: true
     io.k8s.cli.setters.cloudsql-name:
       x-k8s-cli:
         setter:
           name: cloudsql-name
-          value: CLOUDSQL-NAME
+          value: dev-5-13-kfp
           isSet: true
     io.k8s.cli.setters.bucket-name:
       x-k8s-cli:
         setter:
           name: bucket-name
-          value: BUCKET-NAME
+          value: gongyuan-dev-kfp-2
           isSet: true
     io.k8s.cli.setters.mgmt-ctxt:
       x-k8s-cli:
         setter:
           name: mgmt-ctxt
-          value: MANAGEMENT-CTXT
+          value: mgmt-3-23
           isSet: true

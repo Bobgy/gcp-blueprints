@@ -17,4 +17,4 @@ kind: ServiceAccount
 metadata:
   name: kubeflow-pipelines-cloudsql-proxy
   annotations:
-    iam.gke.io/gcp-service-account: KUBEFLOW-NAME-kfp-cloudsql@PROJECT.iam.gserviceaccount.com # {"$kpt-set":"cloudsql-gsa-ref"}
+    iam.gke.io/gcp-service-account: dev-5-13-kfp-cloudsql@gongyuan-dev.iam.gserviceaccount.com # {"$kpt-set":"cloudsql-gsa-ref"}
