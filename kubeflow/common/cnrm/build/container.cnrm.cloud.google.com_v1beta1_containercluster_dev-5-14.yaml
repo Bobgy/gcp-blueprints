@@ -4,7 +4,7 @@ metadata:
   clusterName: gongyuan-dev/us-central1-c/dev-5-14
   labels:
     kf-name: dev-5-14
-    mesh_id: proj-PROJECT_NUMBER
+    mesh_id: proj-117584514845
   name: dev-5-14
   namespace: gongyuan-dev
 spec:

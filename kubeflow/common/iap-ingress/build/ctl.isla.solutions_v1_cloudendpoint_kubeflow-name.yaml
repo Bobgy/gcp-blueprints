@@ -1,0 +1,12 @@
+apiVersion: ctl.isla.solutions/v1
+kind: CloudEndpoint
+metadata:
+  labels:
+    kustomize.component: iap-ingress
+  name: KUBEFLOW-NAME
+  namespace: istio-system
+spec:
+  project: PROJECT
+  targetIngress:
+    name: envoy-ingress
+    namespace: istio-system

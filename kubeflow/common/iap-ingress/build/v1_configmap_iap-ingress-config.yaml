@@ -1,0 +1,16 @@
+apiVersion: v1
+data:
+  appName: KUBEFLOW-NAME
+  hostname: KUBEFLOW-NAME.endpoints.PROJECT.cloud.goog
+  ingressName: envoy-ingress
+  ipName: KUBEFLOW-NAME-ip
+  istioNamespace: istio-system
+  oauthSecretName: kubeflow-oauth
+  project: PROJECT
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  labels:
+    kustomize.component: iap-ingress
+  name: iap-ingress-config
+  namespace: istio-system

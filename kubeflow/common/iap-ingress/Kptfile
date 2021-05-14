@@ -12,3 +12,19 @@ openAPI:
           name: name
           value: dev-5-14
           isSet: true
+    io.k8s.cli.setters.gcloud.core.project:
+      x-k8s-cli:
+        setter:
+          name: gcloud.core.project
+          value: gongyuan-dev
+          isSet: true
+    io.k8s.cli.substitutions.gcp-sa-admin:
+      x-k8s-cli:
+        substitution:
+          name: gcp-sa-admin
+          pattern: ${name}-admin@${gcloud.core.project}.iam.gserviceaccount.com
+          values:
+          - marker: ${name}
+            ref: '#/definitions/io.k8s.cli.setters.name'
+          - marker: ${gcloud.core.project}
+            ref: '#/definitions/io.k8s.cli.setters.gcloud.core.project'
