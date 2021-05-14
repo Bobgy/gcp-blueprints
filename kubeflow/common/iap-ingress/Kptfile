@@ -18,6 +18,32 @@ openAPI:
           name: gcloud.core.project
           value: gongyuan-dev
           isSet: true
+    io.k8s.cli.substitutions.name-label:
+      x-k8s-cli:
+        substitution:
+          name: name-label
+          pattern: ${name}
+          values:
+          - marker: ${name}
+            ref: '#/definitions/io.k8s.cli.setters.name'
+    io.k8s.cli.substitutions.hostname:
+      x-k8s-cli:
+        substitution:
+          name: hostname
+          pattern: ${name}.endpoints.${gcloud.core.project}.cloud.goog
+          values:
+          - marker: ${name}
+            ref: '#/definitions/io.k8s.cli.setters.name'
+          - marker: ${gcloud.core.project}
+            ref: '#/definitions/io.k8s.cli.setters.gcloud.core.project'
+    io.k8s.cli.substitutions.ip-name:
+      x-k8s-cli:
+        substitution:
+          name: ip-name
+          pattern: ${name}-ip
+          values:
+          - marker: ${name}
+            ref: '#/definitions/io.k8s.cli.setters.name'
     io.k8s.cli.substitutions.gcp-sa-admin:
       x-k8s-cli:
         substitution:
