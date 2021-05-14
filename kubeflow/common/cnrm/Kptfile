@@ -18,7 +18,7 @@ openAPI:
       x-k8s-cli:
         setter:
           name: gcloud.core.project
-          value: PROJECT
+          value: gongyuan-dev
           isSet: true
     io.k8s.cli.substitutions.name-label:
       x-k8s-cli:
@@ -32,19 +32,19 @@ openAPI:
       x-k8s-cli:
         setter:
           name: name
-          value: KUBEFLOW-NAME
+          value: dev-5-14
           isSet: true
     io.k8s.cli.setters.location:
       x-k8s-cli:
         setter:
           name: location
-          value: "LOCATION"
+          value: "us-central1-c"
           isSet: true
     io.k8s.cli.setters.mgmt-ctxt:
       x-k8s-cli:
         setter:
           name: mgmt-ctxt
-          value: MANAGEMENT-CTXT
+          value: mgmt-3-23
           isSet: true
     io.k8s.cli.substitutions.vm-sa-ref:
       x-k8s-cli:
