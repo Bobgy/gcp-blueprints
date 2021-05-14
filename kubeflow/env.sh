@@ -3,15 +3,15 @@
 
 # The KF_PROJECT env var contains the Google Cloud project ID where Kubeflow
 # cluster will be deployed to.
-export KF_PROJECT=<google-cloud-project-id>
+export KF_PROJECT=gongyuan-dev
 # ADMIN_EMAIL env var is the Kubeflow admin's email address, it should be
 # consistent with login email on Google Cloud.
 # Example: admin@gmail.com
-export ADMIN_EMAIL=<administrator-full-email-address>
+export ADMIN_EMAIL=gongyuan@kubeflow.org
 # The MGMT_NAME env var contains the name of your management cluster created in
 # management cluster setup:
 # https://www.kubeflow.org/docs/distributions/gke/deploy/management-setup/
-export MGMT_NAME=<management-cluster-name>
+export MGMT_NAME=mgmt-3-23
 # The MGMTCTXT env var contains a kubectl context that connects to the management
 # cluster. By default, management cluster setup creates a context named
 # ${MGMT_NAME} for you.
@@ -29,7 +29,7 @@ export MGMTCTXT="${MGMT_NAME}"
 # * only contain lowercase letters, numbers and "-"s (hyphens)
 # * end with a number or a letter
 # * contain no more than 24 characters
-export KF_NAME=kubeflow
+export KF_NAME=dev-5-14
 # Default values for managed storage used by Kubeflow Pipelines (KFP), you can
 # override as you like.
 # The CloudSQL instance and Cloud Storage bucket instance are created during
@@ -37,7 +37,7 @@ export KF_NAME=kubeflow
 export CLOUDSQL_NAME="${KF_NAME}-kfp"
 # Note, Cloud Storage bucket name needs to be globally unique across projects.
 # So we default to a name related to ${KF_PROJECT}.
-export BUCKET_NAME="${KF_PROJECT}-kfp"
+export BUCKET_NAME="${KF_PROJECT}-kfp-5-14"
 # LOCATION can either be a zone or a region, that determines whether the deployed
 # Kubeflow cluster is a zonal cluster or a regional cluster.
 # Specify LOCATION as a region like the following line to create a regional Kubeflow cluster.
