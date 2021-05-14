@@ -19,7 +19,7 @@ kind: ContainerCluster
 metadata:
   clusterName: "gongyuan-dev/us-central1-c/dev-5-14" # {"$kpt-set":"cluster-name"}
   labels:
-    mesh_id: "proj-PROJECT_NUMBER" # {"$kpt-set":"asm-mesh-id"}
+    mesh_id: "proj-117584514845" # {"$kpt-set":"asm-mesh-id"}
   name: dev-5-14 # {"$kpt-set":"name"}
 spec:
   initialNodeCount: 2
