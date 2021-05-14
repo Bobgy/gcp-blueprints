@@ -7,4 +7,4 @@ metadata:
   namespace: istio-system
 spec:
   domains:
-  - KUBEFLOW-NAME.endpoints.PROJECT.cloud.goog
+  - dev-5-14.endpoints.gongyuan-dev.cloud.goog

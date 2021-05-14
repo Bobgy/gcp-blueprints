@@ -3,10 +3,10 @@ kind: CloudEndpoint
 metadata:
   labels:
     kustomize.component: iap-ingress
-  name: KUBEFLOW-NAME
+  name: dev-5-14
   namespace: istio-system
 spec:
-  project: PROJECT
+  project: gongyuan-dev
   targetIngress:
     name: envoy-ingress
     namespace: istio-system

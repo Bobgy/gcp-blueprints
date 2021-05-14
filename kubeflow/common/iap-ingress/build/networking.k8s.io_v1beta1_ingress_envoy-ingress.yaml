@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   annotations:
     kubernetes.io/ingress.allow-http: "false"
-    kubernetes.io/ingress.global-static-ip-name: KUBEFLOW-NAME-ip
+    kubernetes.io/ingress.global-static-ip-name: dev-5-14-ip
     networking.gke.io/managed-certificates: gke-certificate
   labels:
     kustomize.component: iap-ingress
@@ -14,7 +14,7 @@ spec:
     serviceName: istio-ingressgateway
     servicePort: 80
   rules:
-  - host: KUBEFLOW-NAME.endpoints.PROJECT.cloud.goog
+  - host: dev-5-14.endpoints.gongyuan-dev.cloud.goog
     http:
       paths:
       - backend:

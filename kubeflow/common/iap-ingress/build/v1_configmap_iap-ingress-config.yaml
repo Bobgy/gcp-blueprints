@@ -1,12 +1,12 @@
 apiVersion: v1
 data:
-  appName: KUBEFLOW-NAME
-  hostname: KUBEFLOW-NAME.endpoints.PROJECT.cloud.goog
+  appName: dev-5-14
+  hostname: dev-5-14.endpoints.gongyuan-dev.cloud.goog
   ingressName: envoy-ingress
-  ipName: KUBEFLOW-NAME-ip
+  ipName: dev-5-14-ip
   istioNamespace: istio-system
   oauthSecretName: kubeflow-oauth
-  project: PROJECT
+  project: gongyuan-dev
 kind: ConfigMap
 metadata:
   creationTimestamp: null
