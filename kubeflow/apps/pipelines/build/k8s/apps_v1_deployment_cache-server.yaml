@@ -38,6 +38,11 @@ spec:
             configMapKeyRef:
               key: cacheImage
               name: pipeline-install-config
+        - name: CACHE_NODE_RESTRICTIONS
+          valueFrom:
+            configMapKeyRef:
+              key: cacheNodeRestrictions
+              name: pipeline-install-config
         - name: DBCONFIG_DRIVER
           value: mysql
         - name: DBCONFIG_DB_NAME
@@ -65,7 +70,7 @@ spec:
             secretKeyRef:
               key: password
               name: mysql-secret
-        image: gcr.io/ml-pipeline/cache-server:1.5.0
+        image: gcr.io/ml-pipeline/cache-server:1.6.0
         imagePullPolicy: Always
         name: server
         ports:

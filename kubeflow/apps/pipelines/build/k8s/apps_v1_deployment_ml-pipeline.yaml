@@ -75,6 +75,11 @@ spec:
             configMapKeyRef:
               key: dbPort
               name: pipeline-install-config
+        - name: DBCONFIG_CONMAXLIFETIMESEC
+          valueFrom:
+            configMapKeyRef:
+              key: ConMaxLifeTimeSec
+              name: pipeline-install-config
         - name: OBJECTSTORECONFIG_ACCESSKEY
           valueFrom:
             secretKeyRef:
@@ -88,7 +93,7 @@ spec:
         envFrom:
         - configMapRef:
             name: pipeline-api-server-config-dc9hkg52h6
-        image: gcr.io/ml-pipeline/api-server:1.5.0
+        image: gcr.io/ml-pipeline/api-server:1.6.0
         imagePullPolicy: IfNotPresent
         livenessProbe:
           exec:

@@ -5,7 +5,7 @@ metadata:
 upstream:
   type: git
   git:
-    commit: 2b5a5dd2d0beea39dd2d961d31ebad2ad363742a
-    repo: https://github.com/kubeflow/pipelines
+    commit: 9415d9bcd6cf6399a092f8d3335359a0e5182bdd
+    repo: https://github.com/Bobgy/pipelines
     directory: /manifests/kustomize
-    ref: 1.5.0
+    ref: config-default-pipeline-root

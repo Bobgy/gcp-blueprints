@@ -33,6 +33,12 @@ spec:
             configMapKeyRef:
               key: appVersion
               name: pipeline-install-config
+        - name: KFP_DEFAULT_PIPELINE_ROOT
+          valueFrom:
+            configMapKeyRef:
+              key: defaultPipelineRoot
+              name: pipeline-install-config
+              optional: true
         - name: MINIO_ACCESS_KEY
           valueFrom:
             secretKeyRef:
@@ -55,5 +61,5 @@ spec:
           name: hooks
       volumes:
       - configMap:
-          name: kubeflow-pipelines-profile-controller-code-c2cd68d9k4
+          name: kubeflow-pipelines-profile-controller-code-9dkf48bbf4
         name: hooks

@@ -52,7 +52,7 @@ spec:
             configMapKeyRef:
               key: dbPort
               name: pipeline-install-config
-        image: gcr.io/tfx-oss-public/ml_metadata_store_server:0.25.1
+        image: gcr.io/tfx-oss-public/ml_metadata_store_server:0.30.0
         livenessProbe:
           initialDelaySeconds: 3
           periodSeconds: 5
