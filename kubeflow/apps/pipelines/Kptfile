@@ -178,3 +178,8 @@ openAPI:
           name: bucket-name
           value: gongyuan-dev-kfp-5-14
           isSet: true
+    io.k8s.cli.setters.default-pipeline-root:
+      x-k8s-cli:
+        setter:
+          name: default-pipeline-root
+          value: gs://gongyuan-dev-kfp-5-14/v2/artifacts/
